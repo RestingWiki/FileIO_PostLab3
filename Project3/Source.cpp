@@ -67,6 +67,74 @@ int main() {
 
 
 
+
+	string lib = "LA";
+	string a = "Brian";
+	bool flag1 = false, flag2 = false;
+	int row1, row2;
+
+	for (int i = 0; i < n1;i++)
+	{
+		if (lib == libArr[i][0])
+		{
+			flag1 = true;
+			row1 = i;
+
+			break;
+		}
+	}
+
+
+	for (int i = 0; i < n2; i++)
+	{
+
+		if (a == authArr[i][1])
+		{
+			flag2 = true;
+			row2 = i;
+			break;
+		}
+	}
+
+
+	if (flag2 && flag1)
+	{
+		bool flag3 = false;
+		for (int i = 1; i < 6; i++)
+		{
+
+			{ 
+				for (int j = 2; j < stoi(authArr[row2][0]);j++)
+				{
+					int val1 = stoi(libArr[row1][i]);
+					int val2 = stoi(authArr[row2][j]);
+					cout << "libArr[row1][i] = " << val1 << endl;
+					cout << "authArr[row2][j] = " << val2 << endl;
+					cout << val1 - val2 << endl;
+					if (val1 - val2 == 0)
+					{
+						cout << "Equal" << endl;
+						flag3 = true;
+						break;
+					}
+				}
+			}
+
+			if (flag3)
+				break;
+		}
+
+		if (flag3)
+			cout << "True" << endl;
+		else
+			cout << "False" << endl;
+	}
+	else
+		cout << "Fales";
+
+
+
+
 	// Release memory
 	for (int i = 0; i < n1; i++)
 	{

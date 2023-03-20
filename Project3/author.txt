@@ -1,4 +1,8 @@
-3
+7
 David 1 5
 John 3
 Henry 2 4
+William 6
+Tony 10
+Brian 8 9
+Smith 7
