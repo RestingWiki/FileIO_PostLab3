@@ -69,7 +69,7 @@ int main() {
 
 
 	string lib = "LA";
-	string a = "Brian";
+	string a = "David";
 	bool flag1 = false, flag2 = false;
 	int row1, row2;
 
@@ -104,7 +104,7 @@ int main() {
 		{
 
 			{ 
-				for (int j = 2; j < stoi(authArr[row2][0]);j++)
+				for (int j = 2; j <= stoi(authArr[row2][0]);j++)
 				{
 					int val1 = stoi(libArr[row1][i]);
 					int val2 = stoi(authArr[row2][j]);
@@ -130,7 +130,7 @@ int main() {
 			cout << "False" << endl;
 	}
 	else
-		cout << "Fales";
+		cout << "False";
 
 
 
